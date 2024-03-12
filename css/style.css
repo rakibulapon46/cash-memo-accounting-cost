@@ -1,0 +1,61 @@
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(56, 56, 56);
+}
+
+.container{
+    margin: 20px auto;
+    width: 95%;
+    padding: 15px;
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    border-radius: 10px;
+}
+
+h1{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#billing_form{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+#billing_form input{
+    font-size: 16px;
+    padding: 10px 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #ffaa00;
+}
+
+#billing_form input[type="text"]{
+    max-width: 35%;
+}
+#billing_form input[type="number"]{
+    max-width: 21%;
+}
+
+
+#billing_form input[type="number"]::-webkit-inner-spin-button, #billing_form input[type="number"]::-webkit-outer-spin-button{
+appearance: none;
+}
+
+#addBtn, #printMemo{
+    background-color: #ffaa00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
