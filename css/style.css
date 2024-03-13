@@ -12,7 +12,7 @@ body{
 .container{
     margin: 20px auto;
     width: 95%;
-    padding: 15px;
+    padding: 30px 15px;
     background-color: rgb(30, 30, 30);
     color: #fff;
     border-radius: 10px;
@@ -50,12 +50,48 @@ h1{
 appearance: none;
 }
 
-#addBtn, #printMemo{
-    background-color: #ffaa00;
+#addBtn, #printMemo, #clearAllBtn{
     color: #fff;
-    border: none;
     border-radius: 5px;
     padding: 10px 15px;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBtn{
+    background-color: #ffaa00;
+    border: 2px solid #ffaa00;
+}
+
+#addBtn:hover{
+background-color: #ffffff;
+color: #ffaa00;
+}
+
+#printMemo{
+    background-color: #19a3ff;
+    border: 2px solid #19a3ff;
+}
+
+#printMemo:hover{
+    background-color: #ffffff;
+    color: #19a3ff;
+}
+
+#clearAllBtn{
+    background-color: #ff002f;
+    margin-left: 10px;
+    border: 2px solid #ff002f;
+}
+
+#clearAllBtn:hover{
+    background-color: #fff;
+    color: #ff002f;
+}
+
+#total{
+    text-align: end;
+    margin: 10px;
 }
