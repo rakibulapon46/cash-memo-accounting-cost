@@ -1,97 +1,131 @@
-*,*::before, *::after{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(56, 56, 56);
+body {
+  background-color: rgb(56, 56, 56);
 }
 
-.container{
-    margin: 20px auto;
-    width: 95%;
-    padding: 30px 15px;
-    background-color: rgb(30, 30, 30);
-    color: #fff;
-    border-radius: 10px;
+.container {
+  margin: 20px auto;
+  width: 95%;
+  padding: 30px 15px;
+  background-color: rgb(30, 30, 30);
+  color: #fff;
+  border-radius: 10px;
 }
 
-h1{
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+h1 {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-#billing_form{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+/* billing_form input section start*/
+#billing_form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
-#billing_form input{
-    font-size: 16px;
-    padding: 10px 5px;
-    font-weight: 500;
-    border-radius: 5px;
-    border: 1px solid #ffaa00;
+#billing_form input {
+  font-size: 16px;
+  padding: 10px 5px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #ffaa00;
 }
 
-#billing_form input[type="text"]{
-    max-width: 35%;
+#billing_form input[type="text"] {
+  max-width: 35%;
 }
-#billing_form input[type="number"]{
-    max-width: 21%;
-}
-
-
-#billing_form input[type="number"]::-webkit-inner-spin-button, #billing_form input[type="number"]::-webkit-outer-spin-button{
-appearance: none;
+#billing_form input[type="number"] {
+  max-width: 21%;
 }
 
-#addBtn, #printMemo, #clearAllBtn{
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.3s;
+#billing_form input[type="number"]::-webkit-inner-spin-button,
+#billing_form input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+}
+/* billing_form input section end*/
+
+/* buttons section start */
+#addBtn,
+#printMemo,
+#clearAllBtn {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-#addBtn{
-    background-color: #ffaa00;
-    border: 2px solid #ffaa00;
+/* add button */
+#addBtn {
+  background-color: #ffaa00;
+  border: 2px solid #ffaa00;
 }
 
-#addBtn:hover{
-background-color: #ffffff;
-color: #ffaa00;
+#addBtn:hover {
+  background-color: #ffffff;
+  color: #ffaa00;
 }
 
-#printMemo{
-    background-color: #19a3ff;
-    border: 2px solid #19a3ff;
+/* print button */
+#printMemo {
+  background-color: #19a3ff;
+  border: 2px solid #19a3ff;
 }
 
-#printMemo:hover{
-    background-color: #ffffff;
-    color: #19a3ff;
+#printMemo:hover {
+  background-color: #ffffff;
+  color: #19a3ff;
 }
 
-#clearAllBtn{
-    background-color: #ff002f;
-    margin-left: 10px;
-    border: 2px solid #ff002f;
+ /*  clear all button */
+#clearAllBtn {
+  background-color: #ff002f;
+  margin-left: 10px;
+  border: 2px solid #ff002f;
 }
 
-#clearAllBtn:hover{
-    background-color: #fff;
-    color: #ff002f;
+#clearAllBtn:hover {
+  background-color: #fff;
+  color: #ff002f;
 }
 
-#total{
+/* delete button */
+#deleteBtn {
+  background-color: transparent;
+  color: #ff002f;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* buttons section end */
+
+/* lists section start */
+#lists{
+  margin: 20px 0;
+}
+
+#lists li{
+  font-size: 20px;
+}
+/* lists section end */
+
+/* total amount section start */
+#totalDiv {
     text-align: end;
     margin: 10px;
 }
+/* total amount section end */

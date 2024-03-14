@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cash memo accounting cost</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-   
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/59531f5a28.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <div class="container">
-        <h1>CASH MEMO ACCOUNTING COST</h1>
+      <h1>CASH MEMO ACCOUNTING COST</h1>
 
-        <form id="billing_form">
-        <input type="text" id="itemName" placeholder="Item Name" required>
-        <input type="number" id="itemQuantity" placeholder="Quantity" required>
-        <input type="number" id="itemPrice" placeholder="Price" required>
+      <!-- billing_form input section start-->
+      <form id="billing_form">
+        <input type="text" id="itemName" placeholder="Item Name" required />
+        <input
+          type="number"
+          id="itemQuantity"
+          placeholder="Quantity"
+          required
+        />
+        <input type="number" id="itemPrice" placeholder="Price" step="any" required />
+        <!-- add button section -->
         <button type="submit" id="addBtn">Add</button>
-        </form>
-        <p id="message"></p>
-        <ul id="lists"></ul>
-        <div id="total">Total: 0$</div>
-        <button id="printMemo">Print Memo</button>
-        <button id="clearAllBtn">Clear All</button>
+      </form>
+      <!-- billing_form input section end --->
+
+      <!-- item add message show start -->
+      <p id="message"></p>
+      <!-- item add message show end -->
+
+      <!-- item added section start -->
+      <ul id="lists"></ul>
+      <!-- item added section end -->
+
+      <!-- total amount section start -->
+      <div id="totalDiv">Total: 0 Taka</div>
+      <!-- total amount section end -->
+
+      <!-- print button section -->
+      <button id="printMemo">Print Memo</button>
+      <!-- clear all button section  -->
+      <button id="clearAllBtn">Clear All</button>
     </div>
 
-      <script src="./js/index.js"></script>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
