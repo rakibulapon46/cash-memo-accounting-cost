@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   billingForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const itemName = document.getElementById("itemName").value;
-    const itemQuantity = parseInt(
+    const itemQuantity = parseFloat(
       document.getElementById("itemQuantity").value
     );
     const itemPrice = parseFloat(
