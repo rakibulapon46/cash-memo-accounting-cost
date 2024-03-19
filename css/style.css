@@ -14,7 +14,7 @@ body {
 .container {
   margin: 20px auto;
   width: 95%;
-  padding: 30px 15px;
+  padding: 30px 12px;
   background-color: rgb(30, 30, 30);
   color: #fff;
   border-radius: 10px;
@@ -89,7 +89,7 @@ h1 {
   color: #19a3ff;
 }
 
- /*  clear all button */
+/*  clear all button */
 #clearAllBtn {
   background-color: #ff002f;
   margin-left: 10px;
@@ -114,18 +114,75 @@ h1 {
 /* buttons section end */
 
 /* lists section start */
-#lists{
+/* #lists {
   margin: 20px 0;
 }
 
-#lists li{
+#lists li {
   font-size: 20px;
-}
+} */
 /* lists section end */
+
+table {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+thead,
+tbody {
+  width: 100%;
+}
+
+thead tr,
+tbody tr {
+  display: flex;
+}
+
+th,
+td {
+  border: 1px solid #939393;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1%;
+  text-align: right;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  flex-basis: 10%;
+  text-align: left;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  flex-basis: 32%;
+  text-align: left;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  flex-basis: 13%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  flex-basis: 21%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  flex-basis: 28%;
+}
 
 /* total amount section start */
 #totalDiv {
-    text-align: end;
-    margin: 10px;
+  text-align: end;
+  margin: 10px;
+  color: #ff002f;
+  font-weight: bold;
 }
 /* total amount section end */

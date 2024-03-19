@@ -24,10 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const itemTotal = itemQuantity * itemPrice;
     total += itemTotal;
 
-    const itemElement = document.createElement("li");
-    itemElement.innerHTML = ` ${itemName} - ${itemQuantity} x ${itemPrice} = ${itemTotal.toFixed(
-      2
-    )} <span> <button id="deleteBtn"><i class="fa-solid fa-xmark"></i> </button></span>`;
+    const itemElement = document.createElement("tr");
+    // itemElement.innerHTML = ` ${itemName} - ${itemQuantity} x ${itemPrice} = ${itemTotal.toFixed(
+    //   2
+    // )} <span> <button id="deleteBtn"><i class="fa-solid fa-xmark"></i> </button></span>`;
+    itemElement.innerHTML = `
+    <td>1</td>
+    <td>${itemName}</td>
+    <td>${itemQuantity}</td>
+    <td>${itemPrice}</td>
+    <td>${itemTotal.toFixed(2)}</td>`
     lists.appendChild(itemElement);
 
     totalDiv.textContent = `Total: ${total.toFixed(2)} Taka`;
