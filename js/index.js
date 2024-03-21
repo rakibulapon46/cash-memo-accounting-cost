@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   billingForm.addEventListener("submit", function (e) {
     e.preventDefault();
+
+     for (let i = 0; i < itemElement.length; i++) {
+
+    }
     const itemName = document.getElementById("itemName").value;
     const itemQuantity = parseFloat(
       document.getElementById("itemQuantity").value
@@ -29,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //   2
     // )} <span> <button id="deleteBtn"><i class="fa-solid fa-xmark"></i> </button></span>`;
     itemElement.innerHTML = `
-    <td>1</td>
+    <td>${itemSN}</td>
     <td>${itemName}</td>
     <td>${itemQuantity}</td>
     <td>${itemPrice}</td>
