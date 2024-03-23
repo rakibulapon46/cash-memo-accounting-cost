@@ -10,13 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const clearAllBtn = document.getElementById("clearAllBtn");
   const deleteBtn = document.getElementById("deleteBtn");
   let total = 0;
+  let itemSN = 0;
 
   billingForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-     for (let i = 0; i < itemElement.length; i++) {
-
-    }
     const itemName = document.getElementById("itemName").value;
     const itemQuantity = parseFloat(
       document.getElementById("itemQuantity").value
@@ -32,22 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
     // itemElement.innerHTML = ` ${itemName} - ${itemQuantity} x ${itemPrice} = ${itemTotal.toFixed(
     //   2
     // )} <span> <button id="deleteBtn"><i class="fa-solid fa-xmark"></i> </button></span>`;
+    itemSN++;
     itemElement.innerHTML = `
-    <td>${itemSN}</td>
-    <td>${itemName}</td>
-    <td>${itemQuantity}</td>
-    <td>${itemPrice}</td>
-    <td>${itemTotal.toFixed(2)}</td>`
+      <td>${itemSN}</td>
+      <td>${itemName}</td>
+      <td>${itemQuantity}</td>
+      <td>${itemPrice}</td>
+      <td>${itemTotal.toFixed(2)}</td>`;
     lists.appendChild(itemElement);
 
     totalDiv.textContent = `Total: ${total.toFixed(2)} Taka`;
     billingForm.reset();
 
-    deleteBtn.addEventListener("click", function () {
-      // itemElement.style.display = "none";
-      lists.removeChild(itemElement);
-      total -= itemTotal;
-    });
+    // deleteBtn.addEventListener("click", function () {
+    //   // itemElement.style.display = "none";
+    //   lists.removeChild(itemElement);
+    //   total -= itemTotal;
+    // });
 
     clearAllBtn.addEventListener("click", function () {
       itemElement.style.display = "none";
@@ -58,4 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
   printMemo.addEventListener("click", function () {
     window.print();
   });
+
+  
 });

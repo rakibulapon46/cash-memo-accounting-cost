@@ -186,3 +186,19 @@ td:nth-child(5) {
   font-weight: bold;
 }
 /* total amount section end */
+
+/* footer section start */
+footer{
+  text-align: center;
+  color: #fff;
+}
+
+footer .fa-heart{
+  color: #ff002f;
+}
+
+footer a{
+  text-decoration: none;
+  color: #19a3ff;
+}
+/* footer section end  */
