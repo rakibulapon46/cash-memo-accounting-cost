@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       itemElement.style.display = "none";
       totalDiv.textContent = `Total: 0 Taka`;
       total = 0;
+      itemSN = 0;
     });
   });
   printMemo.addEventListener("click", function () {
