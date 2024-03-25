@@ -25,19 +25,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const itemTotal = itemQuantity * itemPrice;
     total += itemTotal;
+    itemSN++;
 
     const itemElement = document.createElement("tr");
     // itemElement.innerHTML = ` ${itemName} - ${itemQuantity} x ${itemPrice} = ${itemTotal.toFixed(
     //   2
     // )} <span> <button id="deleteBtn"><i class="fa-solid fa-xmark"></i> </button></span>`;
-    itemSN++;
+    itemElement.setAttribute("data-id", itemSN);
     itemElement.innerHTML = `
       <td>${itemSN}</td>
       <td>${itemName}</td>
       <td>${itemQuantity}</td>
       <td>${itemPrice}</td>
       <td>${itemTotal.toFixed(2)}</td>
-      <td> <button id="deleteBtn"><i class="fa-solid fa-xmark"></i> </button></td>
+      <td> <button class="deleteBtn"><i class="fa-solid fa-xmark"></i> </button></td>
       `;
     lists.appendChild(itemElement);
 
@@ -52,9 +53,22 @@ document.addEventListener("DOMContentLoaded", function () {
     //   itemSN++;
     // });
 
+    itemElement
+      .querySelector(".deleteBtn")
+      .addEventListener("click", function () {
+        lists.removeChild(itemElement);
+        total -= itemTotal;
+        totalDiv.textContent = `Total: ${total.toFixed(2)} Taka`;
+        // Update the SN for all remaining items
+        document.querySelectorAll("#lists tr").forEach((row, index) => {
+          row.querySelector("td:first-child").textContent = index + 1;
+        });
+        itemSN = lists.querySelectorAll("tr").length; // Update the itemSN to the current number of items
+      });
+
     clearAllBtn.addEventListener("click", function () {
       itemElement.style.display = "none";
-      totalDiv.textContent = `Total: 0 Taka`;
+      totalDiv.textContent = `Total: ${total.toFixed(2)} Taka`;
       total = 0;
       itemSN = 0;
     });
