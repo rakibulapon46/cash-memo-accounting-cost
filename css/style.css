@@ -106,9 +106,8 @@ h1 {
   background-color: transparent;
   color: #ff002f;
   border: none;
-  margin-left: 10px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* buttons section end */
@@ -153,13 +152,13 @@ td {
 
 th:nth-child(1),
 td:nth-child(1) {
-  flex-basis: 10%;
+  flex-basis: 9%;
   text-align: left;
 }
 
 th:nth-child(2),
 td:nth-child(2) {
-  flex-basis: 32%;
+  flex-basis: 29%;
   text-align: left;
 }
 
@@ -170,12 +169,20 @@ td:nth-child(3) {
 
 th:nth-child(4),
 td:nth-child(4) {
-  flex-basis: 21%;
+  flex-basis: 19%;
 }
 
 th:nth-child(5),
 td:nth-child(5) {
-  flex-basis: 28%;
+  flex-basis: 24%;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+  /* flex-basis: 28%; */
+  border: none;
+  text-align: end;
+  margin-left: 2px;
 }
 
 /* total amount section start */
@@ -191,6 +198,7 @@ td:nth-child(5) {
 footer{
   text-align: center;
   color: #fff;
+  margin-bottom: 1rem;
 }
 
 footer .fa-heart{

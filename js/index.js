@@ -36,7 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
       <td>${itemName}</td>
       <td>${itemQuantity}</td>
       <td>${itemPrice}</td>
-      <td>${itemTotal.toFixed(2)}</td>`;
+      <td>${itemTotal.toFixed(2)}</td>
+      <td> <button id="deleteBtn"><i class="fa-solid fa-xmark"></i> </button></td>
+      `;
     lists.appendChild(itemElement);
 
     totalDiv.textContent = `Total: ${total.toFixed(2)} Taka`;
@@ -45,7 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // deleteBtn.addEventListener("click", function () {
     //   // itemElement.style.display = "none";
     //   lists.removeChild(itemElement);
+    //   totalDiv.textContent = `Total: ${total.toFixed(2)} Taka`;
     //   total -= itemTotal;
+    //   itemSN++;
     // });
 
     clearAllBtn.addEventListener("click", function () {
@@ -58,6 +62,4 @@ document.addEventListener("DOMContentLoaded", function () {
   printMemo.addEventListener("click", function () {
     window.print();
   });
-
-  
 });
