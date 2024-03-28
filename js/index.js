@@ -28,9 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
     itemSN++;
 
     const itemElement = document.createElement("tr");
-    // itemElement.innerHTML = ` ${itemName} - ${itemQuantity} x ${itemPrice} = ${itemTotal.toFixed(
-    //   2
-    // )} <span> <button id="deleteBtn"><i class="fa-solid fa-xmark"></i> </button></span>`;
     itemElement.setAttribute("data-id", itemSN);
     itemElement.innerHTML = `
       <td>${itemSN}</td>
