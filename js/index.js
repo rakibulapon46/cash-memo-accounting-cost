@@ -42,14 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
     totalDiv.textContent = `Total: ${total.toFixed(2)} Taka`;
     billingForm.reset();
 
-    // deleteBtn.addEventListener("click", function () {
-    //   // itemElement.style.display = "none";
-    //   lists.removeChild(itemElement);
-    //   totalDiv.textContent = `Total: ${total.toFixed(2)} Taka`;
-    //   total -= itemTotal;
-    //   itemSN++;
-    // });
-
     itemElement
       .querySelector(".deleteBtn")
       .addEventListener("click", function () {
