@@ -1,4 +1,4 @@
-// finding elements
+// finding elements 
 document.addEventListener("DOMContentLoaded", function () {
   const billingForm = document.getElementById("billing_form");
 
