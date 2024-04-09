@@ -168,12 +168,12 @@ td:nth-child(3) {
 
 th:nth-child(4),
 td:nth-child(4) {
-  flex-basis: 24%;
+  flex-basis: 21%;
 }
 
 th:nth-child(5),
 td:nth-child(5) {
-  flex-basis: 28%;
+  flex-basis: 31%;
 }
 
 th:nth-child(6),
