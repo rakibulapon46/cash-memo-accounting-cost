@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     const itemPrice = parseFloat(
       document.getElementById("itemPrice").value
-    ).toFixed(2);
+    );
 
     const itemTotal = itemQuantity * itemPrice;
     total += itemTotal;
